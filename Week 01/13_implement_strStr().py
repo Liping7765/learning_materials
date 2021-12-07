@@ -92,3 +92,9 @@ class Solution:
 """
 
                 
+"""
+------------review section-------------
+1.hash function 
+2.modular oprations 
+
+"""
