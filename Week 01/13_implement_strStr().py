@@ -1,5 +1,3 @@
-
-
 #first thought is to go through the string and then compare if that matches target 
 class Solution:
     """
@@ -91,4 +89,65 @@ class Solution:
 
 """
 
+
+
+
                 
+"""
+--------review section---------
+1.hash function
+2.modular operation 
+"""
+
+
+#Redo this question on 12/7/2021
+class Solution:
+    def strStr(self, source: str, target: str) -> int:
+        
+        m = len(target)
+        if not m:
+            return 0
+        if not len(source):
+            return -1
+        
+        BASE = 1000000
+        
+        #turn target to hashcode 
+        hash_target = 0
+        for letter in target:
+            hash_target = (hash_target * 31 + ord(letter)) % BASE
+        
+        #find out the highest power 
+        power = (31 ** m) % BASE
+        
+        
+        #go thru source to identify 
+        hashcode = 0
+        for index in range(len(source)):
+            hashcode = (hashcode * 31 + ord(source[index])) % BASE
+            
+            #when the length is less than target 
+            if index < m - 1:
+                continue
+            
+            #when the length is more than target 
+            if index >= m:
+                hashcode = hashcode - (ord(source[index - m]) * power % BASE)
+                
+                if hashcode < 0:
+                    hashcode += BASE
+            
+            #compare to see if they are equivalent 
+            if hashcode == hash_target and source[index - m + 1 : index + 1] == target:
+                return index - m + 1
+            
+            
+        return -1
+
+"""
+error:
+" power = (31 ** m) % 31 " still occurs. It reflects my unfamiliarity with this hashing function.
+
+comment:
+"for index in range(len(source))" runs slower than "for index, letter in source"
+"""
