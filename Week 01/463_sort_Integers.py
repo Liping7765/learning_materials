@@ -137,3 +137,18 @@ eg. [x,x]
     (0,0) (1,1)
 
 """
+
+
+"""
+Comparions between quicksort and mergesort 
+
+    quicksort                   mergesort 
+
+1. Time of O(n^2)               always O(nlogn)
+   average O(nlogn)
+
+2. O(1) space                     O(n) space
+
+3. can't stable sort                yes
+
+"""

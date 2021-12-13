@@ -20,5 +20,14 @@ class Solution:
 """
 review session
 1.Python can have negative index.
+
+>>> test = [0,1,2,3,4]
+
+>>> print(test[:-1])
+[0, 1, 2, 3]
+
+>>> print(test[-3:])
+[2, 3, 4]
+
 """
 
