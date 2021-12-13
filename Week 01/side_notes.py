@@ -32,3 +32,24 @@ Queue
 同向双指针
 
 
+"""
+Recursion
+1. 函数应该接受什么样的参数，返回什么样的值，代表什么意思
+2. 递归的拆解
+3. 递归的出口
+
+"""
+
+
+"""
+How to create a array with a certain length in python:
+nums = [0] * n  
+
+1.The arguments, the return values, and variable "nums" itself is stored in stack space, 
+however, the numbers in nums are actually stored in heap space to avoid stack overflow. 
+
+2.Content stored in stack space will be erased after function ends, but heap space will remain.
+
+3.尾递归可以实现O（1）的空间消耗
+""""
+
