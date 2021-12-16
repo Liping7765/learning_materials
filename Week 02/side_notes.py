@@ -19,4 +19,8 @@ for i in reversed(range(len(my_list))):
     print(my_list[i])       # '1' '2' '3'
 
 
+
+2. peak value summary 
+
+
 """
