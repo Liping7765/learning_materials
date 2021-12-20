@@ -20,3 +20,11 @@ class Solution:
                 count += a.get(-c - d, 0)
 
         return count 
+
+
+""" 
+review session:
+
+divide and conquer 
+
+"""

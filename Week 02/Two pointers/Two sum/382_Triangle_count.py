@@ -34,10 +34,18 @@ class Solution:
 
 
 """
+Review session:
 
-1. remember to check the continue 
+1. learn how to loop backwards -> for i in range(big, small, -1)
+2. How to based on the intended results to estimate the least time complexity
 
-2. learn how to loop backwards 
+    a. a + b + c = 0 -> c is a constant once a + b is confirmed, so only n^2
+    b. a + b <= c  -> even tho the a + b are confirmed, we still need to identify c, in this case, the 
+        possible solution will be n^3
+
+    c. however, if we only need to calculate the count, we might reduce it to n^2 or n^2 * logn 
+        
+3. please run thru the continue statement once to avoid logical errors
 
 """
 
