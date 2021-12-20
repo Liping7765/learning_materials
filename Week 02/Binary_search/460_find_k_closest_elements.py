@@ -43,3 +43,16 @@ class Solution:
                 right = (right + 1) % len(A)
 
         return results
+
+
+    
+"""
+review session:
+
+1. "A[middle] <= target" ->  [k - 1, k + 1]  or [k, k + 1]
+2. "A[middle] >= target" ->  [k - 1, k + 1]  or [k - 1, k]
+
+"""
+
+
+
