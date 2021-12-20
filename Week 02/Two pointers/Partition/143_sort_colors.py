@@ -37,3 +37,13 @@ class Solution:
         
         self.sort(colors, start, right, color_from, pivot_color)
         self.sort(colors, left, end, pivot_color + 1, color_to)
+
+"""
+review session: 
+
+O(nlogk) 
+-> backtrack the idea of the algorithm 
+-> divide and conquer (mergesort) or -> binary sear
+
+"""
+

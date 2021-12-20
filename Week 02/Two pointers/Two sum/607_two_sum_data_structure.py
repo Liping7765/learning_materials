@@ -76,6 +76,9 @@ add  O(n)
 -> X TreeMap  
 
 find O(n)
+
+hashmap -> add O(1), find O(n)
+
         
 """
     
