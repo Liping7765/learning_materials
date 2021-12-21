@@ -42,4 +42,8 @@ next node in order or smallest node that is greater than one node :
 2. the first parent node whose node.left contains the starting node 
 
 阅读全文并背诵 13. BST iterator
+
+
+5. sum(wood // k for wood in L)
+
 """
