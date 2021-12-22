@@ -85,3 +85,7 @@ review session:
 
 """
 
+
+#use divide and conquer 
+
+
