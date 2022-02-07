@@ -42,9 +42,20 @@ Each region is totally independent of each other
 
     Network ACL applys at the subnet level to control the trafic -> stateless firewall 
 
-    Stateful firewalls vs stateless firewalls 
+    Stateful firewalls vs stateless firewalls:
 
-    statefull firewalls allow outbound return automatically if inbound is allowed 
-    stateless firewalls will check both inbound and outbound 
+    Statefull firewalls allow outbound return automatically if inbound is allowed 
+    Stateless firewalls will check both inbound and outbound 
+
+
+6. Public and Private services 
+
+    Public services have public IP/ endpoint 
+    Private services could have public and private IP addresses
+
+7. Amazon Elastic Compute Cloud (EC2)
+    a. public, private, and elastic IP address 
+    b. amazon machine image (AMI) : operating system and some configuration 
+
 
 """
